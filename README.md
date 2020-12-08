@@ -34,6 +34,10 @@ The *Properties window* is used to show the properties of the form or the contro
 
 ![Toolbox & Properties window](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-windows-forms-using-c-/main/properties%20window%20and%20toolbox.png).
 
+### Building the form with the controls.
+
+
+
 
 
 
