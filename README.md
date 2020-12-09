@@ -5,7 +5,7 @@
 
 
 
-**Windows forms** allow the programmers to create a graphical user interface (GUI) that allows the interaction with the program visually. According to [Microsoft](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/overview/?view=netdesktop-5.0) It provides one of the most productive ways to create desktop apps based on the visual designer provided in Visual Studio. Functionality such as drag-and-drop placement of visual controls makes it easy to build desktop apps.
+**Windows forms** allow the programmers to create a graphical user interface (GUI) that allows the interaction with the program visually. According to [Microsoft](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/overview/?view=netdesktop-5.0), It provides one of the most productive ways to create desktop apps based on the visual designer provided in Visual Studio. Functionality such as drag-and-drop placement of visual controls makes it easy to build desktop apps.
 
 
 With *windows forms* you can make different types of applications, from basic applications like a calculator and mini-games to high-level applications such as a library database management application that requires the connection of the database to the application.
@@ -13,10 +13,10 @@ With *windows forms* you can make different types of applications, from basic ap
 ### Prerequisites.
 
 
-1. Basic understanding of c# programming language.
+1. A basic understanding of c# programming language.
 2. Visual studio installed on your system.
 
-If you dont have Visual studio installed on your computer. you can download it from [Here](https://visualstudio.microsoft.com/downloads/).
+If you don't have Visual Studio installed on your computer. you can download it from [Here](https://visualstudio.microsoft.com/downloads/).
 
 ### Make a new project.
 
@@ -40,7 +40,7 @@ First of all, let's start with the form and change the text to My calculator. **
 
 Now let's begin by adding the buttons and the textbox. First, we will add the numbers as buttons then we will add the C button the Calculating button the Operation buttons, and finally, the Textbox that will show the answer.
 
-**NOTE:** dont forget to change both the controls name and the text.
+**NOTE:** don't forget to change both the controls name and the text.
 
 ![First_look](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-windows-forms-using-c-/main/First_look1.png).
 
@@ -72,7 +72,7 @@ The following code inside each button will add the number to the `Output.Text`.
         }
         ...
 ```
-Inside the `Dot_Click` we should discuss the case of multiple dots. In order to fix this problem, we should check the the `Output.Text` if it has a dot already inside of it, if not we can normally add a dot to the text. **NOTE:** that we use the `try()` & `catch()` in order to prevent the user from doing invalid operations.
+Inside the `Dot_Click` we should discuss the case of multiple dots. In order To fix this problem, we should check the `Output.Text` if it has a dot already inside of it, if not we can normally add a dot to the text. **NOTE:** that we use the `try()` & `catch()` In order To prevent the user from doing invalid operations.
 
 ```c#
        private void Dot_Click(object sender, EventArgs e)
@@ -119,7 +119,7 @@ Now let's move to the operations.
         }
 ```
 In this piece of code, we will deal with the `Sqrt()` & the `Pow()` methods.
-**NOTE:** that in order to use the Pow & Sqrt methods you need to import the Math class as follows `using static System.Math;`.
+**NOTE:** that In order To use the Pow & Sqrt methods you need to import the Math class as follows `using static System.Math;`.
 We will also use the `try()` & `catch()` to prevent the user from doing invalid operations.
 
 ```c#
@@ -179,21 +179,5 @@ Let's change some colors and fonts using the properties window!
 
 ### Conclusion.
 In this tutorial, we created a basic calculator using the windows forms, we have learned how easy it is to build various applications with it using very flexible Controls, we have also learned how to connect these Controls to the code inside of it. However, this is not over! We will build more applications using windows forms in the upcoming tutorials. Don’t forget to test out the code to fully understand how it works.
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
 
 
