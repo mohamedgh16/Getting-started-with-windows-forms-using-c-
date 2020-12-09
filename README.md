@@ -42,7 +42,7 @@ Now let's begin by adding the buttons and the textbox. First, we will add the nu
 
 **NOTE:** dont forget to change both the controls name and the text.
 
-![First_look](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-windows-forms-using-c-/main/First_look.png).
+![First_look](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-windows-forms-using-c-/main/First_look1.png).
 
 ### Inside the code.
 
@@ -72,19 +72,17 @@ The following code inside each button will add the number to the `Output.Text`.
         }
         ...
 ```
-Inside the `Dot_Click` we should discuss the case of multiple dots. In order to fix this problem, we should check the the `Output.Text` if it has a dot already inside of it, if not we can normally add a dot to the text.
+Inside the `Dot_Click` we should discuss the case of multiple dots. In order to fix this problem, we should check the the `Output.Text` if it has a dot already inside of it, if not we can normally add a dot to the text. **NOTE:** that we use the `try()` & `catch()` in order to prevent the user from doing invalid operations.
 
 ```c#
-          private void Dot_Click(object sender, EventArgs e)
+       private void Dot_Click(object sender, EventArgs e)
         {
-            int Numberofdots = 0;
-            for(int i=0;i<(Output.Text.Length);i++)
+            string w = Output.Text.ToString();
+            int len= w.Length;
+            if (Output.Text[--len] != '.')
             {
-                if (Output.Text[i] == '.')
-                    Numberofdots++;
-            }
-            if(Numberofdots==0)           
                 Output.Text += ".";
+            }
         }
 ```
 To clear the `Output.Text` we simply do this.
@@ -100,9 +98,89 @@ Now let's move to the operations.
 
 
 ```c#
+    private void Sum_Click(object sender, EventArgs e)
+        {
+            Output.Text += "+";
+        }
 
+        private void Minus_Click(object sender, EventArgs e)
+        {
+            Output.Text += "-";
+        }
 
+        private void Multi_Click(object sender, EventArgs e)
+        {
+            Output.Text += "*";
+        }
+
+        private void Div_Click(object sender, EventArgs e)
+        {
+            Output.Text += "/";
+        }
 ```
+In this piece of code, we will deal with the `Sqrt()` & the `Pow()` methods.
+**NOTE:** that in order to use the Pow & Sqrt methods you need to import the Math class as follows `using static System.Math;`.
+We will also use the `try()` & `catch()` to prevent the user from doing invalid operations.
+
+```c#
+ private void Sqrt_Click(object sender, EventArgs e)
+        {              
+            try
+                {
+                double ans = Sqrt(Double.Parse(Output.Text));
+                Output.Text = ans.ToString();
+                }
+            catch(Exception E)
+            {
+                MessageBox.Show(E.Message);
+            }
+
+        }
+        private void Pow_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double ans = Pow(Double.Parse(Output.Text), 2);
+                Output.Text = ans.ToString();
+            }
+            catch (Exception E)
+            {
+                MessageBox.Show(E.Message);
+            }
+        }
+```
+Finally, we will work on the Calculate button to evaluate the string expression, and Don't forget to check for invalid operations or inputs.
+
+```c#
+ private void Calculate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable Calc = new DataTable();
+                var ans = Calc.Compute(Output.Text, "");
+                Output.Text = ans.ToString();
+            }
+            catch (Exception E)
+            {
+                MessageBox.Show(E.Message);
+            }
+        }
+```
+
+### Final touches.
+Let's change some colors and fonts using the properties window!
+
+1. Change the BackColor of the Form from Apearance -> BackColor -> Grey.
+1. Change the BackColor of all the buttons from Apearance -> BackColor -> Black.
+1. Set the Font of all the buttons from Apearance -> fontstyle -> Bold, size -> 12 & change the Forecolor to white.
+1. Set the Font of the Output.Text from Apearance -> fontstyle -> Bold, size -> 14 & from Behavior Enabled -> False
+
+![Final_look](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-windows-forms-using-c-/main/Final_look.png).
+
+### Conclusion.
+
+
+
 
 
         
