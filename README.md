@@ -36,6 +36,14 @@ The *Properties window* is used to show the properties of the form or the contro
 
 ### Building the form with the controls.
 
+First of all, let's start with the form and change the text to My calculator. **NOTE:** that changing the name of a Control or the form will only change the name of the object inside the code, and that makes it easier to figure out which button or witch textbox you are using or editing right now, on the other hand changing the text of a Control will only change what appears to the user.
+
+Now let's begin by adding the buttons and the textbox. first, we will add the numbers as buttons then we will add the C button the Calculating button the Operation buttons, and finally, the Textbox that we will show the numbers on.
+
+**NOTE:** dont forget to change both the controls name and the text.
+
+
+
 
 
 
