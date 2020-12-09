@@ -178,7 +178,7 @@ Let's change some colors and fonts using the properties window!
 ![Final_look](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-windows-forms-using-c-/main/Final_look.png).
 
 ### Conclusion.
-
+In this tutorial, we created a basic calculator using the windows forms, we have learned how easy it is to build various applications with it using very flexible Controls, we have also learned how to connect these Controls to the code inside of it. However, this is not over! We will build more applications using windows forms in the upcoming tutorials. Don’t forget to test out the code to fully understand how it works.
 
 
 
