@@ -38,9 +38,78 @@ The *Properties window* is used to show the properties of the form or the contro
 
 First of all, let's start with the form and change the text to My calculator. **NOTE:** that changing the name of a Control or the form will only change the name of the object inside the code, and that makes it easier to figure out which button or witch textbox you are using or editing right now, on the other hand changing the text of a Control will only change what appears to the user.
 
-Now let's begin by adding the buttons and the textbox. first, we will add the numbers as buttons then we will add the C button the Calculating button the Operation buttons, and finally, the Textbox that we will show the numbers on.
+Now let's begin by adding the buttons and the textbox. First, we will add the numbers as buttons then we will add the C button the Calculating button the Operation buttons, and finally, the Textbox that will show the answer.
 
 **NOTE:** dont forget to change both the controls name and the text.
+
+![First_look](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-windows-forms-using-c-/main/First_look.png).
+
+### Inside the code.
+
+Now let's start coding! First double click on any of the buttons to write your code inside it, let's start with the numbers.
+
+The following code inside each button will add the number to the `Output.Text`.
+
+```c#
+ private void Num0_Click(object sender, EventArgs e)
+        {
+            Output.Text += "0";
+        }
+
+        private void Num1_Click(object sender, EventArgs e)
+        {
+            Output.Text += "1";
+        }
+
+        private void Num2_Click(object sender, EventArgs e)
+        {
+            Output.Text += "2";
+        }
+
+        private void Num3_Click(object sender, EventArgs e)
+        {
+            Output.Text += "3";
+        }
+        ...
+```
+Inside the `Dot_Click` we should discuss the case of multiple dots. In order to fix this problem, we should check the the `Output.Text` if it has a dot already inside of it, if not we can normally add a dot to the text.
+
+```c#
+          private void Dot_Click(object sender, EventArgs e)
+        {
+            int Numberofdots = 0;
+            for(int i=0;i<(Output.Text.Length);i++)
+            {
+                if (Output.Text[i] == '.')
+                    Numberofdots++;
+            }
+            if(Numberofdots==0)           
+                Output.Text += ".";
+        }
+```
+To clear the `Output.Text` we simply do this.
+
+```c#
+private void Cbut_Click(object sender, EventArgs e)
+        {
+            Output.Text="";
+        }
+```
+
+Now let's move to the operations.
+
+
+```c#
+
+
+```
+
+
+        
+
+
+
+
 
 
 
