@@ -18,6 +18,7 @@ With *windows forms* you can make different types of applications, from basic ap
 
 If you don't have Visual Studio installed on your computer. you can download it from [Here](https://visualstudio.microsoft.com/downloads/).
 
+
 ### Make a new project.
 
 
@@ -32,7 +33,7 @@ The *Toolbox* window provides you with all the controls that help you build your
 
 The *Properties window* is used to show the properties of the form or the control that you click on, you can manipulate the properties of any control used in your form. To display the window you can click on View -> properties window or you can simply click F4.   
 
-![Toolbox & Properties window](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-windows-forms-using-c-/main/properties%20window%20and%20toolbox.png).
+![Toolbox & Properties window](/engineering-education/Getting-started-with-windows-forms-using-c-#/properties window and toolbox.png).
 
 ### Building the form with the controls.
 
@@ -42,7 +43,7 @@ Now let's begin by adding the buttons and the textbox. First, we will add the nu
 
 **NOTE:** don't forget to change both the controls name and the text.
 
-![First_look](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-windows-forms-using-c-/main/First_look1.png).
+![First_look](/engineering-education/Getting-started-with-windows-forms-using-c-#/First_look1.png).
 
 ### Inside the code.
 
@@ -175,7 +176,7 @@ Let's change some colors and fonts using the properties window!
 1. Set the Font of all the buttons from Apearance -> fontstyle -> Bold, size -> 12 & change the Forecolor to white.
 1. Set the Font of the Output.Text from Apearance -> fontstyle -> Bold, size -> 14 & from Behavior Enabled -> False
 
-![Final_look](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-windows-forms-using-c-/main/Final_look.png).
+![Final_look](/engineering-education/Getting-started-with-windows-forms-using-c-#/Final_look.png).
 
 ### Conclusion.
 In this tutorial, we created a basic calculator using the windows forms, we have learned how easy it is to build various applications with it using very flexible Controls, we have also learned how to connect these Controls to the code inside of it. However, this is not over! We will build more applications using windows forms in the upcoming tutorials. Don’t forget to test out the code to fully understand how it works.
