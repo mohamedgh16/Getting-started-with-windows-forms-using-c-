@@ -33,7 +33,7 @@ The *Toolbox* window provides you with all the controls that help you build your
 
 The *Properties window* is used to show the properties of the form or the control that you click on, you can manipulate the properties of any control used in your form. To display the window you can click on View -> properties window or you can simply click F4.   
 
-![Toolbox & Properties window](/engineering-education/Getting-started-with-windows-forms-using-c-#/properties window and toolbox.png).
+![properties window and toolbox](/engineering-education/Getting-started-with-windows-forms-using-c-#/properties window and toolbox.png).
 
 ### Building the form with the controls.
 
