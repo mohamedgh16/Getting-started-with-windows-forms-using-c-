@@ -43,7 +43,7 @@ Now let's begin by adding the buttons and the textbox. First, we will add the nu
 
 **NOTE:** don't forget to change both the controls name and the text.
 
-![First_look](/engineering-education/Getting-started-with-windows-forms-using-c-#/First_look1.png).
+![First_look1](/engineering-education/Getting-started-with-windows-forms-using-c-#/First_look1.png).
 
 ### Inside the code.
 
